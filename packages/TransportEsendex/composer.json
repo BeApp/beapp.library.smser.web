@@ -3,7 +3,7 @@
     "description": "Esendex transport for SMS library",
     "type": "library",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "keywords": [
         "sms",
         "symfony",
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "beapp/smser-core": "^0.0.1",
+        "beapp/smser-core": "^0.1.0",
         "esendex/sdk": "v2.1.0"
     },
     "autoload": {
