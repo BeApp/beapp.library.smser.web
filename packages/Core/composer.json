@@ -1,0 +1,29 @@
+{
+    "name": "beapp/smser-core",
+    "description": "Core SMS library",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "keywords": [
+        "sms",
+        "symfony"
+    ],
+    "authors": [
+        {
+            "name": "Damien Villeneuve",
+            "email": "d.villeneuve@beapp.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "psr/log": "1.0.2",
+        "symfony/translation": "4.*",
+        "symfony/routing": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapp\\SMS\\Core\\": ""
+        }
+    }
+}

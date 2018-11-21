@@ -1,0 +1,42 @@
+{
+    "name": "beapp/smser",
+    "version": "0.0.1",
+    "type": "library",
+    "keywords": [
+        "mail",
+        "email",
+        "symfony"
+    ],
+    "authors": [
+        {
+            "name": "Damien Villeneuve",
+            "email": "d.villeneuve@beapp.fr"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "description": "SMS library for Symfony project",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "psr/log": "1.0.2",
+        "symfony/translation": "4.*",
+        "symfony/routing": "4.*"
+    },
+    "require-dev": {
+        "symplify/monorepo-builder": "^4.7",
+        "phpunit/phpunit": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapp\\SMS\\Core\\": "packages/Core/"
+        }
+    },
+    "replace": {
+        "beapp/smser-core": "self.version"
+    }
+}
