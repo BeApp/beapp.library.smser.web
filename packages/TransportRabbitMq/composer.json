@@ -1,0 +1,28 @@
+{
+    "name": "beapp/smser-transport-rabbitmq",
+    "description": "RabbitMq transport for SMS library",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "keywords": [
+        "sms",
+        "symfony",
+        "rabbitmq"
+    ],
+    "authors": [
+        {
+            "name": "Damien Villeneuve",
+            "email": "d.villeneuve@beapp.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "beapp/smser-core": "^0.0.1",
+        "php-amqplib/rabbitmq-bundle": "^1.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapp\\SMS\\Transport\\Rabbitmq\\": ""
+        }
+    }
+}
