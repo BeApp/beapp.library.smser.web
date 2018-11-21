@@ -1,6 +1,6 @@
 {
     "name": "beapp/smser",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "type": "library",
     "keywords": [
         "mail",
@@ -22,10 +22,13 @@
     "license": "MIT",
     "require": {
         "php": ">=7.1",
+        "esendex/sdk": "v2.1.0",
         "ext-json": "*",
         "psr/log": "1.0.2",
         "symfony/translation": "4.*",
-        "symfony/routing": "4.*"
+        "symfony/routing": "4.*",
+        "php-amqplib/rabbitmq-bundle": "^1.14",
+        "pda/pheanstalk": "^3.2"
     },
     "require-dev": {
         "symplify/monorepo-builder": "^4.7",
@@ -33,10 +36,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Beapp\\SMS\\Core\\": "packages/Core/"
+            "Beapp\\SMS\\Core\\": "packages/Core/",
+            "Beapp\\SMS\\Transport\\Beanstalk\\": "packages/TransportBeanstalk/",
+            "Beapp\\SMS\\Transport\\Esendex\\": "packages/TransportEsendex/",
+            "Beapp\\SMS\\Transport\\Rabbitmq\\": "packages/TransportRabbitMq/"
         }
     },
     "replace": {
-        "beapp/smser-core": "self.version"
+        "beapp/smser-core": "self.version",
+        "beapp/smser-transport-beanstalk": "self.version",
+        "beapp/smser-transport-rabbitmq": "self.version"
     }
 }

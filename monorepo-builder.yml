@@ -8,3 +8,6 @@ parameters:
   # for "split" command
   directories_to_repositories:
     packages/Core: 'git@github.com:BeApp/beapp.library.smser-core.web.git'
+    packages/TransportRabbitMq: 'git@github.com:BeApp/beapp.library.smser-transport-rabbitmq.web.git'
+    packages/TransportBeanstalk: 'git@github.com:BeApp/beapp.library.smser-transport-beanstalk.web.git'
+    packages/TransportEsendex: 'git@github.com:BeApp/beapp.library.smser-transport-esendex.web.git'
