@@ -1,0 +1,28 @@
+{
+    "name": "beapp/smser-transport-esendex",
+    "description": "Esendex transport for SMS library",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "keywords": [
+        "sms",
+        "symfony",
+        "esendex"
+    ],
+    "authors": [
+        {
+            "name": "Damien Villeneuve",
+            "email": "d.villeneuve@beapp.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "beapp/smser-core": "^0.0.1",
+        "esendex/sdk": "v2.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapp\\SMS\\Transport\\Esendex\\": ""
+        }
+    }
+}

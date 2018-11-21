@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6aa06a4c1cddc99d556a9e424cc88ca",
+    "content-hash": "8d65d25ac3079cbce72171b89eac247e",
     "packages": [
+        {
+            "name": "esendex/sdk",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/esendex/esendex-php-sdk.git",
+                "reference": "f4d78d84b42d69898682cae7968845942ca1326e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/esendex/esendex-php-sdk/zipball/f4d78d84b42d69898682cae7968845942ca1326e",
+                "reference": "f4d78d84b42d69898682cae7968845942ca1326e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phing/phing": "2.*",
+                "phpunit/phpunit": "4.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Esendex": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Esendex Support",
+                    "email": "support@esendex.com"
+                }
+            ],
+            "description": "Send SMS from your application using the Esendex API",
+            "homepage": "http://developers.esendex.com",
+            "keywords": [
+                "api",
+                "requests",
+                "rest",
+                "restful",
+                "sms"
+            ],
+            "time": "2017-04-27T08:56:00+00:00"
+        },
         {
             "name": "pda/pheanstalk",
             "version": "v3.2.1",

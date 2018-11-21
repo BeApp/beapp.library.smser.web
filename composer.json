@@ -22,6 +22,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.1",
+        "esendex/sdk": "v2.1.0",
         "ext-json": "*",
         "psr/log": "1.0.2",
         "symfony/translation": "4.*",
@@ -37,6 +38,7 @@
         "psr-4": {
             "Beapp\\SMS\\Core\\": "packages/Core/",
             "Beapp\\SMS\\Transport\\Beanstalk\\": "packages/TransportBeanstalk/",
+            "Beapp\\SMS\\Transport\\Esendex\\": "packages/TransportEsendex/",
             "Beapp\\SMS\\Transport\\Rabbitmq\\": "packages/TransportRabbitMq/"
         }
     },
